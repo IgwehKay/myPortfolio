@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+nav{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* border: 2px solid black; */
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    align-items: center;
+    gap: 5em;
+
+}
+nav ul{
+    display: flex;
+    gap:4em;
+    align-items: center;
+}
+
+.logo{
+    width: 120px;
+}
+
+nav ul li a{
+    color: #9999A6;
+    font-size: .875em;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+.btns{
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.btns a{
+    color: black;
+}
+
+.sign-in-btn {
+    border: 0.5px solid #9999A6;
+}
+
+.sign-in-btn a:hover{
+    color: #38AEF5;
+}
+.subscribe-btn{
+    background-color: #38AEF5;
+    border: none;
+}
+
+.subscribe-btn:hover{
+    background-color: #0e8bd8f6;
+}
+.subscribe-btn a{
+    color: #fff;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    /* flex-wrap: wrap; */
+}
+.right-side .search-icon {
+    /* border: 2px solid black; */
+}
+
+
+.fa-bars{
+    display: none;
+}
+
+.search-icon{
+    /* border: 2px solid black; */
+}
+
+
+.backgrd-img{
+    width: 100%;
+    opacity: 75%;
+    /* height: 80vh; */
+
+}
+
+.hero-sect{
+    position: relative;
+    width: 100%;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.hero-sect h1{
+    position: absolute;
+    /* border: 2px solid black; */
+    top: 38%;
+    left: 39%;
+    color: #fff;
+    font-weight:800;
+    /* text-align: center; */
+    font-size: 2.5rem;
+    /* margin-bottom: 10px; */
+    /* width: 90%; */
+}
+
+.hero-sect p{
+    position: absolute;
+    top: 45%;
+    left: 39%;
+    color: #fff;
+    /* width:30%; */
+    margin: auto;
+    /* border: 2px solid black; */
+    font-weight: 500;
+    background-color:#38AEF5;
+    font-size: 1em;
+
+
+}
+
+/* --laptop-screen media query-- */
+
+@media(max-width:1024px){
+
+    .logo{
+        width: 80px;
+    }
+    .menu-list{
+        display: none;
+        
+    }
+    nav{
+        justify-content: space-between;
+        /* width: 100%; */
+    }
+    .fa-bars{
+        display: block;
+    }
+    .fa-magnifying-glass{
+        display: block;
+    }
+    .hero-sect h1{
+        top: 38%;
+        font-size: 2rem;
+        margin-bottom: 10px;
+
+    }
+    .hero-sect p{
+        font-size: 0.7em;
+    }
+
+
+}
+
+/* --tablet-screen media query-- */
+
+@media(max-width:768px){
+    .right-side .btns{
+        display: none;
+    }
+    .logo{
+        width: 50px;
+    }
+    .hero-sect{
+        width: 100%;
+    }
+    .hero-img{
+        width: 100%;
+    }    
+
+    .hero-sect h1{
+        font-size: 1.5rem;
+        /* margin-bottom: 10px; */
+        /* border: 2px solid black; */
+        top: 38%;
+    }
+    .hero-sect p{
+        font-size: 0.5em;
+    }
+
+
+}
+
+
+/* --mobile small-screen media query-- */
+
+@media(max-width: 480px){
+    .right-side .fa-magnifying-glass{
+        display: none;
+    }
+
+    .logo{
+        width: 40px;
+    }
+    .hero-sect{
+        width: 100%;
+    }
+    .hero-img{
+        width: 100%;
+    }    
+
+    .hero-sect h1{
+        font-size: 0.5rem;
+        /* margin-bottom: 10px; */
+        /* border: 2px solid black; */
+        top: 38%;
+    }
+    .hero-sect p{
+        font-size: 0.3em;
+    }
+
+}
+
+@media(max-width: 125px){
+    .right-side .fa-magnifying-glass{
+        display: none;
+    }
+
+    .logo{
+        width: 30px;
+    }
+    .hero-sect{
+        width: 100%;
+    }
+    .hero-img{
+        width: 100%;
+    }    
+
+    .hero-sect h1{
+        font-size: 0.4rem;
+        /* margin-bottom: 10px; */
+        /* border: 2px solid black; */
+        top: 38%;
+    }
+    .hero-sect p{
+        font-size: 0.2em;
+    }
+
+}
+
+
+/* https://preview.themeforest.net/item/polar-minimal-blog-and-magazine-ghost-themezip/full_screen_preview/19974381 */
+
+/* 
+.hero-sect{
+    position: relative;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%); 
+}
+
+*/
