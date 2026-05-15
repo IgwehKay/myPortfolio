@@ -11,19 +11,24 @@
 
 nav{
     display: flex;
-    margin: auto;
     width: 100%;
-    /* justify-content: space-around; */
     align-items: center;
     /* border: 2px solid black; */
-    justify-content: space-evenly;
-    margin: auto;
+    justify-content: space-around;
+    /* margin: auto; */
     flex-wrap: wrap;
     position: fixed;
+    top: 0;
     z-index: 1;
     background-color: #fff;
     overflow: hidden;
 
+}
+
+
+header{
+    /* width:100%; */
+    /* border: 2px solid black; */
 }
 
 .left-side{
@@ -109,40 +114,219 @@ nav ul li a:hover{
 }
 
 .hero-sect{
+    /* margin-top: 140px; */
+    /* height: 80vh; */
     position: relative;
     width: 100%;
 }
 
 .hero-img{
-    width: 100%;
+    /* border: 2px solid black; */
+    /* width: 100%; */
+    /* margin-top: 10%; */
+}
+
+.hero-text{
+    position: absolute;
+    top: 38%;
+    left: 39%;
+    /* border: 2px solid black; */
+    /* background-color: red; */
+
+    /* transform: translateY(-50%);  */
 }
 
 .hero-sect h1{
-    position: absolute;
     /* border: 2px solid black; */
-    top: 38%;
-    left: 39%;
     color: #fff;
     font-weight:800;
     /* text-align: center; */
     font-size: 2.5rem;
-    /* margin-bottom: 10px; */
+    margin-bottom: 1px;
     /* width: 90%; */
 }
 
 .hero-sect p{
-    position: absolute;
-    top: 45%;
-    left: 39%;
     color: #fff;
-    /* width:30%; */
-    margin: auto;
+    width:70%;
+    /* margin: auto; */
     /* border: 2px solid black; */
     font-weight: 500;
     background-color:#38AEF5;
-    font-size: 1em;
+    font-size: 1rem;
 
 
+}
+
+.cards{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    gap: 3em;
+
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    position: relative;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.html-icon{
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 0;
+    }
+
+.css-icon{
+    /* margin-top: 5px; */
+    position: absolute;
+    top: 2%;
+}
+
+.js-icon{
+    position: absolute;
+    top: 4%;
+    /* border: 2px solid black; */
+
+}
+
+.view-button{
+    position: absolute;
+    text-align: center;
+    margin: auto;    
+    top: 92%;
+    padding: 6px 10px;
+    background-color: #38AEF5;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.view-button a{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+.card h3{
+    position: absolute;
+    top: 58%;
+    /* border: 2px solid black; */
+
+    /* left: 30% */
+}
+
+.card p{
+    position: absolute;
+    top: 67%;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+    /* padding: 5px; */
+}
+
+.card .js-text{
+    position: absolute;
+    top: 55%;
+    /* color: red; */
+}
+
+
+.cards .base{
+    width: 100%;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+    margin-left: 0;
+    margin-top: 20px;
+    /* padding-top: 30px; */
+    /* border-top: 1px solid #0000000c; */
+    position: absolute;
+    top: 80%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    /* background-color: red; */
+    position: absolute;
+    
+}
+.cards .signature-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* top: 75%; */
+    /* border: 2px solid black; */
+        /* z-index: 2; */
+    position: absolute;
+    background-color: #61616255;
+    overflow: hidden;
+}
+
+.signature-image img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* object-fit: cover; */
+    /* border-radius: 50%; */
+    z-index: 10;
+}
+.cards .signature-image-and-name{
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.card .base-texts{
+    padding: 5px;
+    /* border: 2px solid black; */
+}
+
+.cards .name{
+    position: absolute;
+    font-size: 0.8rem;
+    top: 0;
+    left: 18%;
+    /* border: 2px solid black; */
+}
+
+
+.cards .date{
+    position: absolute;
+    top: 0;
+    left: 75%;
+    font-size: 0.8rem;
+    /* border: 2px solid black; */
+}
+
+.card .text3{
+    /* border: 2px solid black; */
+    margin-top: -20px;
+}
+
+.card .base-texts3{
+    padding: 5px;
+    margin-top: -15px;
+}
+
+.my-project-text{
+    text-align: center  ;
 }
 
 /* --laptop-screen media query-- */
@@ -167,15 +351,51 @@ nav ul li a:hover{
         display: block;
     }
     .hero-sect h1{
-        top: 38%;
+        /* top: 38%; */
         font-size: 2rem;
-        margin-bottom: 10px;
 
     }
     .hero-sect p{
-        font-size: 0.7em;
+        font-size: 0.7rem;
+    }
+    
+    .card{
+        width: 300px;
+        height: 450px;
+    }
+    .cards .base{
+        /* border: 2px solid black; */
+        width: 100%;
+        margin-top: 35px;
+        
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .card .base p{
+        font-size: 11px;
+    }
+    .base .name{
+        margin-left: 7%;
+    }
+    .base .date{
+        margin-left: -5%;
+    }
+    .css-icon{
+        height: 39%;
     }
 
+    .js-icon{
+        height: 39%;
+    }
+
+    .view-button {
+        padding: 3px 5px;
+    }
+
+    .view-button a{
+        font-size: 9px;
+    }
 
 }
 
@@ -199,14 +419,57 @@ nav ul li a:hover{
         font-size: 1.5rem;
         /* margin-bottom: 10px; */
         /* border: 2px solid black; */
-        top: 38%;
+        /* top: 20%; */
     }
     .hero-sect p{
-        font-size: 0.5em;
+        font-size: 0.5rem;
     }
 
+    .card p{
+        font-size: 12px;
+    }
 
+    .card .base{
+        position: absolute;
+        top: 75%;
+    }
+    .card .base p{
+        font-size: 9px;
+    }
+    .base .name{
+        margin-left: 16%;
+    }
+    .base .date{
+        margin-left: -5%;
+    }
+    .css-icon{
+        height: 39%;
+    }
+
+    .js-icon{
+        height: 39%;
+    }
+
+    .card{
+        width: 250px;
+        height: 350px;
+    }
+    .my-project-text{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .view-button {
+        margin-top: -8px;
+        padding: 3px;
+
+    }
+
+    .view-button a{
+        font-size: 7px;
+    }
 }
+
 
 
 /* --mobile small-screen media query-- */
@@ -221,6 +484,7 @@ nav ul li a:hover{
     }
     .hero-sect{
         width: 100%;
+        flex-direction: column;
     }
     .hero-img{
         width: 100%;
@@ -230,11 +494,19 @@ nav ul li a:hover{
         font-size: 0.5rem;
         /* margin-bottom: 10px; */
         /* border: 2px solid black; */
-        top: 38%;
     }
     .hero-sect p{
-        font-size: 0.3em;
+        font-size: 0.3rem;
     }
+
+    .cards{
+        flex-direction: column;
+    }
+    .my-project-text{
+        font-size: 1rem;
+        text-align: center;
+    }
+
 
 }
 
@@ -242,9 +514,12 @@ nav ul li a:hover{
     .right-side .fa-magnifying-glass{
         display: none;
     }
+    nav{
+        align-items: center;
+    }
 
     .logo{
-        width: 30px;
+        width: 20px;
     }
     .hero-sect{
         width: 100%;
@@ -254,13 +529,12 @@ nav ul li a:hover{
     }    
 
     .hero-sect h1{
-        font-size: 0.4rem;
+        font-size: 0.25rem;
         /* margin-bottom: 10px; */
         /* border: 2px solid black; */
-        top: 38%;
     }
     .hero-sect p{
-        font-size: 0.2em;
+        font-size: 0.1rem;
     }
 
 }
@@ -280,4 +554,4 @@ nav ul li a:hover{
     transform: translateY(-50%); 
 }
 
-*/
+ */
